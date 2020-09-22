@@ -127,5 +127,5 @@ dev.off()
 ```
 
 ### Output
-![Bar chart](https://github.com/rjug-sci/R_tutorial_graphs/sample_image/Figure_1.png)
+![Bar chart](https://github.com/R_tutorial_graphs/sample_image/Figure_1.png)
 
