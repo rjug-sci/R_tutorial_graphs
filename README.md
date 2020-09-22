@@ -127,4 +127,5 @@ dev.off()
 ```
 
 ### Output
+![Bar chart](https://github.com/rjug-sci/R_tutorial_graphs/blob/masterbranch/Figure_1.png?raw=true)
 
