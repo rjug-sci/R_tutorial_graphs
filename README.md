@@ -20,6 +20,8 @@ https://rstudio.com/products/rstudio/download/
 
 ### Setup
 
+Specify the working directory in which you will be working in.
+
 ```R
 
 setwd("/Users/folderlocation")
