@@ -33,16 +33,20 @@ install.packages("ggplot2")
 
 Initialise your libraries
 
-```{R}<space>{
+```R
+
 library(ggsci)
 library(dplyr)
 library(readxl)
-library(ggplot2)}
+library(ggplot2)
+
+```
 
 Open your dataset and generate some basic statistics such as the mean, sd and frequency of values.
 Calling your dataset by name "data2" will show all the values stored in that variable.
 
-```{R}<space>{
+```R
+
 data <- read_excel("~Filelocation.xlsx", 
                     sheet = "sheet1")
 
@@ -52,26 +56,31 @@ data2 <- ddply(data, c("Cells", "Gene"), summarise,
                sd   = sd(Expression),
                se   = sd / sqrt(N))
 data2
-}
+
+```
 
 Separate data into factors and specify the order in which your factors will show up on the graph.
 
-```{R}<space>{
+```R
+
 data3$Cells <- factor(data2$Cells,
                         levels = c("MCF7","BT-20","SkBr3","ZR-75-1"))
-}
+```
 
 Call the size of the canvas for the visual device
 
-```{R}<space>{
+```R
+
 par(mar=c(3,4,3,1) + 0.1)
 par(oma=c(3,4,3,3))
 par(mfcol=c(2, 2))
-}
+
+```
 
 The code bellow will initialise and save a graph in a minimalist style and will use the standard colour scheme from "Nature" Publications. Other themes may be specified throug the ggsci package. All aspects of the chart may also be changed such as fonts, font size, background colour etc. 
 
-```{R}<space>{
+```R
+
 png("Figure_name_1.png", width=2000, height=2000, res=400)
 p <- ggplot(data3, aes(fill = Cells, y=mean, x=Gene))
 p <- p + geom_bar(position="dodge", stat="identity")
@@ -95,4 +104,5 @@ p <- p + coord_cartesian(ylim = c(0,8))
 p <- p + scale_y_continuous(breaks=seq(0,8,0.2))
 p
 dev.off()
-}
+```
+
