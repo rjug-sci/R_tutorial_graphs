@@ -18,7 +18,14 @@ https://rstudio.com/products/rstudio/download/
 
 ### Screenshot
 
-### How To Use
+### Setup
+
+```R
+
+setwd("/Users/folderlocation")
+getwd()
+
+```
 
 Begin with installing the prerequisite libraries for data manipulation, style and graph creation.
 
@@ -41,6 +48,8 @@ library(readxl)
 library(ggplot2)
 
 ```
+
+### Data Manipulation
 
 Open your dataset and generate some basic statistics such as the mean, sd and frequency of values.
 Calling your dataset by name "data2" will show all the values stored in that variable.
@@ -66,6 +75,8 @@ Separate data into factors and specify the order in which your factors will show
 data3$Cells <- factor(data2$Cells,
                         levels = c("MCF7","BT-20","SkBr3","ZR-75-1"))
 ```
+
+### Graph Creation
 
 Call the size of the canvas for the visual device
 
