@@ -22,11 +22,14 @@ https://rstudio.com/products/rstudio/download/
 
 Begin with installing the prerequisite libraries for data manipulation, style and graph creation.
 
-```{R}<space>{
+'''R
+
 install.packages("ggsci")
 install.packages("dplyr")
 install.packages("readxl")
-install.packages("ggplot2")}
+install.packages("ggplot2")
+
+'''
 
 Initialise your libraries
 
