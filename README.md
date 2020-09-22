@@ -57,8 +57,12 @@ data <- read_excel("~Filelocation.xlsx",
 ```
 
 ### Alternative method for data import
+R can take a number of files including and not limited to txt, csv, tsv. 
 
+```R
+data <- read.csv("data.csv")
 
+```
 
 ### Data Manipulation
 Get summary statistics about the dataset using  the dplyr package.
