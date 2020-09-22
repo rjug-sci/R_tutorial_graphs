@@ -97,7 +97,7 @@ par(mfcol=c(2, 2))
 
 ```
 
-The code bellow will initialise and save a graph in a minimalist style and will use the standard colour scheme from "Nature" Publications. Other themes may be specified throug the ggsci package. All aspects of the chart may also be changed such as fonts, font size, background colour etc. 
+The code bellow will initialise and save a graph in a minimalist style and will use the standard colour scheme from "Nature" Publications. Other themes may be specified through the ggsci package. All features of the chart may be modified such as font, font size, background colour, line width etc. The visual device may also be specified either vector formats such as png/pdf or image formats such as bitmap/jpeg.
 
 ```R
 
@@ -119,7 +119,6 @@ p <- p + theme(strip.text.x = element_text(size = 12),
 p <- p + theme(axis.line.x = element_line(color="black", size = 0.5),
                axis.line.y = element_line(color="black", size = 0.5))
 p <- p + theme(axis.ticks.length = unit(.5,))
-#for the p value significance layer onto plot
 p <- p + coord_cartesian(ylim = c(0,8))
 p <- p + scale_y_continuous(breaks=seq(0,8,0.2))
 p
