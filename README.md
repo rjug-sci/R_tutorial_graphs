@@ -45,7 +45,7 @@ library(ggplot2)
 
 ```
 
-### Data Manipulation
+### Data Import
 
 Open your dataset and generate some basic statistics such as the mean, sd and frequency of values.
 Calling your dataset by name "data2" will show all the values stored in that variable.
@@ -54,7 +54,16 @@ Calling your dataset by name "data2" will show all the values stored in that var
 
 data <- read_excel("~Filelocation.xlsx", 
                     sheet = "sheet1")
+```
 
+### Alternative method for data import
+
+
+
+### Data Manipulation
+Get summary statistics about the dataset using  the dplyr package.
+
+```R
 data2 <- ddply(data, c("Cells", "Gene"), summarise,
                N    = length(Expression),
                mean = mean(Expression),
