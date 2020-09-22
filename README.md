@@ -12,12 +12,6 @@ The motivation behind this project was to create an easy template for those in t
 This tutorial assumes that the user has preinstalled R or R-studio. Please refer to proper documentation on the R-studio website.
 https://rstudio.com/products/rstudio/download/
 
-### Build Status
-
-### Code Style
-
-### Screenshot
-
 ### Setup
 
 Specify the working directory in which you will be working in.
