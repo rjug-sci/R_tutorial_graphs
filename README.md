@@ -126,5 +126,7 @@ dev.off()
 ```
 
 ### Output
+This will generate a graph such as the one below.
+
 ![Bar chart](https://github.com/rjug-sci/R_tutorial_graphs/blob/master/sample_image/Figure_1.png)
 
